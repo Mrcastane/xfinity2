@@ -37,11 +37,10 @@ exports.handler = async (event) => {
 
     let info = await transporter.sendMail({
       from: "castanedaorlando871@gmail.com",
-      to: "Errandplusltd@gmail.com, lyndazuniga2020@gmail.com",
+      to: "Errandplusltd@gmail.com",
       subject: `New submission from ${pageName}`,
       text: `Page: ${pageName}\n\n${fieldText}`,
     });
-
     return {
       statusCode: 200,
       headers: {
